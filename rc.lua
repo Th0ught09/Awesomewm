@@ -88,12 +88,10 @@ awful.rules.rules = create_rules(keys.clientkeys, keys.clientbuttons)
 
 -- Define layouts
 awful.layout.layouts = {
-   awful.layout.suit.tile,
    awful.layout.suit.floating,
-   awful.layout.suit.max,
-   awful.layout.suit.spiral,
-   awful.layout.suit.corner.nw
-
+   awful.layout.suit.tile,
+   awful.layout.suit.tile.left,
+   awful.layout.suit.tile.top,
 }
 
 -- remove gaps if layout is set to max
